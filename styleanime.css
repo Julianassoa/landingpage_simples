@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Fjalla One', 'Tahoma';
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: transparent linear-gradient(198deg, #73B1BF 0%, #D96459 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-size: 200% 200%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundAnimete 0.5s ease-in-out infinite;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social-media{
+    margin-top: 1rem;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 2rem 4rem;
+    border: 1px solid #fff;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+
+a:hover{
+    color:#73B1BF;
+    background-color: #fff;
+}
+
+@keyframes backgroundAnimete{
+    0% {
+        background-position: 0% 40%;
+    }
+    40% {
+        background-position: 40% 60%;
+    }
+    100%{
+        background-position: 60% 100%;
+    }
+}
